@@ -37,7 +37,7 @@ map.on('click', function(e) {
 
   var popup = new mapboxgl.Popup({ offset: [0, 0] })
     .setLngLat(feature.geometry.coordinates)
-    .setHTML(title + '<ul><li>Location: ' + feature.properties.location + '</li><li>Team Leaders: ' + feature.properties.team + '</li><li>URep: ' + feature.properties.urep + '</li></ul><img src="' + feature.properties.image + '" alt="' + feature.properties.title + '"/><p>' + feature.properties.description + snapchatText + '</p>')
+    .setHTML(title + '<ul><li>Location: ' + feature.properties.location + '</li><li>Team Leaders: ' + feature.properties.team + '</li><li>University Representative: ' + feature.properties.urep + '</li></ul><img src="' + feature.properties.image + '" alt="' + feature.properties.title + '"/><p>' + feature.properties.description + snapchatText + '</p>')
     .setLngLat(feature.geometry.coordinates)
     .addTo(map);
 });
